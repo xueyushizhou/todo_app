@@ -35,7 +35,10 @@ def show_todos(todos):
             print(f"{i}. [{status}] {todo['text']}")
 
 def add_todo(todos):
-    text = input("请输入待办事项：")
+    text = input("请输入待办事项：").strip()
+    if not text:
+        print("待办事项不能为空。")
+        return
     todo = {"text": text, "done": False}
     todos.append(todo)
     save_todos(todos)
@@ -107,7 +110,7 @@ def main():
         print("5. 标记完成/未完成")
         print("6. 退出")
 
-        choice = input("请选择操作：")
+        choice = input("请选择操作：").strip()
 
         if choice == "1":
             add_todo(todos)
