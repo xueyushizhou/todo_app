@@ -1,4 +1,5 @@
-{"text": "买东西", "done": false}
+{"text": "买东西", "done": true}
 {"text": "联系老师", "done": true}
 {"text": "回家做饭", "done": false}
 {"text": "跑步", "done": false}
+{"text": "完成作业", "done": false}
